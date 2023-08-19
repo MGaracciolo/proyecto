@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #F2F2F2;
+}
+
+.card img{
+ max-width: 50px;
+}
+
+.card{
+    border: solid 8px #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    text-align: center;
+    background-color: #046437;
+}
+
+a{
+    text-decoration: none;
+    color:#F2F2F2;
+}
+
+a:hover{
+    font-size: 25px;
+}
+/*esto va dentro de 601*/
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 30% 10% 50%;
+    align-items: center;
+    background-color: #03733F;
+}
+
+.logo img {
+    max-width: 200px;
+    margin: 5px 50px;
+}
+ 
+/*aca termina*/
+
+.servicios, .contacto, .blog{
+    background-color: #118C53;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.empresa{
+
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://blogger.googleusercontent.com/img/a/AVvXsEjsHS76-Mw-XshYlyp4KD3NnXbA9JEWgMuhbkUAqPRI2fZO2dSBmly6bekJMMMvejFuYPiKmB4HS0cnvWbRoKOGIcazIL9HsTTU1KCmVsMk-bRD9R842DEXz0zvg2Q26GzxefVBZD51O8jy_HsdzqrJpNHIe3v3voBZD01hTjHyzVBAijaNcttGwn1rjKg=s1600);
+    background-position: center; 
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.empresa h1{
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+.empresa p {
+    font-size: 20px;
+    margin: 40px;
+    font-weight: 600;
+}
+
+.servicios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+.redes ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+li img{
+
+    width: 43px;;
+}
+
+/*para celus*/
+
+ @media(max-width:600px){
+
+    .empresa{
+        height: 900px;
+        
+    }
+    .empresa h1{
+        font-size: 25px;
+    }
+    .empresa p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .serv{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr; 
+    } 
+    .card{
+        max-height: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contacto .form{
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; 
+        width: 100%;
+    }
+
+    input{
+        margin: 5px;
+        width: 100%;
+
+    }
+    }
+
+
+
+
+/*para tablets*/
+
+
+@media(min-width: 601px){
+    .serv{
+        display: grid;
+        gap: 10px;
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+
+/*para compus*/
+
+@media(min-width:1000px){
+    .serv{
+        display: grid;
+        gap: 10px;
+        grid-template-columns:repeat(5, 1fr);
+    }
+
+    .card{
+        max-width: 220px;
+    }
+} 
